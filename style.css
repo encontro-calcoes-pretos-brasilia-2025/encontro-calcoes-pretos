@@ -97,7 +97,7 @@ img{display:block;max-width:100%;height:auto}
   align-items:center;
 }
 .discobolus{
-  max-width:min(860px,92vw);
+  max-width:min(800px,92vw);
   width:100%;
   height:auto;
   filter:drop-shadow(0 20px 40px rgba(0,0,0,.6));
