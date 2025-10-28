@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-  <!-- HEADER (fundo branco, título grande) -->
+  <!-- HEADER -->
   <header class="header">
     <div class="wrapper bar">
       <div class="shields"><img src="./assets/cmp (1).png" alt="Brasão esquerdo"/></div>
@@ -17,32 +17,29 @@
     </div>
   </header>
 
-  <!-- HERO (preto, Discóbolo central e QR menor) -->
+  <!-- HERO -->
   <section class="hero">
     <div class="wrapper">
-      <!-- Apenas esta linha/estrutura é nova para posicionar esquerda-centro-direita -->
       <div class="hero-flex">
-        <!-- ESQUERDA: alerta + botão -->
+        <!-- ESQUERDA -->
         <div class="left-alert">
-          <img src="./assets/alerta.jpg" alt="Alerta"/>
+          <img src="./assets/alerta.jpg" alt="Alerta" class="alert-icon"/>
           <a class="cta-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf6hqe5GPnw8JKGI92llUf93ShaQ8_yL1FalzsEaCjiJVIFvA/viewform?usp=dialog" target="_blank" rel="noopener">
             Inscreva-se
           </a>
         </div>
 
-        <!-- CENTRO: Discóbolo (tamanho e estilo originais preservados) -->
-        <div>
+        <!-- CENTRO -->
+        <div class="center-disc">
           <img class="discobolus" src="./assets/discobolo-novo.jpg" alt="Discóbolo"/>
         </div>
 
-        <!-- DIREITA: hashtag + QR (como no original) -->
+        <!-- DIREITA -->
         <div class="right">
           <div class="hash">#VLCP</div>
           <img src="./assets/Sem título.png" alt="QR Code"/>
         </div>
       </div>
-
-      <div class="divider"></div>
     </div>
   </section>
 
@@ -64,14 +61,13 @@
     </div>
   </section>
 
-  <!-- PATROCINADORES / ALMANAQUE -->
+  <!-- PATROCINADORES -->
   <section class="sponsors">
     <div class="wrapper row">
       <div class="center">
         <img src="./assets/transferir (1) (1).png" alt="Ornamento dourado"/>
       </div>
       <div class="center">
-        <!-- ALMANAQUE: link mantendo o tamanho original da imagem -->
         <a href="https://drive.google.com/file/d/1TLmz0ta9QCRXG6n57uOZ8r_TmzqWHxb4/view?usp=drive_link" target="_blank" rel="noopener">
           <img class="almanaque" src="./assets/large (1).jpg" alt="Almanaque (clique para abrir o PDF)">
         </a>
@@ -87,21 +83,12 @@
     <div class="wrapper">
       <h2>KIT CALÇÃO PRETO</h2>
       <div style="display:grid;grid-template-columns:1fr;gap:20px">
-        <!-- GRID DAS IMAGENS -->
-        <div class="card-frame" style="
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 20px;
-          flex-wrap: wrap;
-        ">
+        <div class="card-frame" style="display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;">
           <img src="./assets/camisadefinitiva-fotor-bg-remover-20251001171611.png" alt="Camiseta do Kit" style="height:220px;object-fit:contain"/>
           <img src="./assets/1copo.jpg" alt="Copo 1" style="height:160px;object-fit:contain"/>
           <img src="./assets/copo.jpg" alt="Copo 2" style="height:160px;object-fit:contain"/>
           <img src="./assets/moeda.png" alt="moeda" style="height:160px;object-fit:contain"/>
         </div>
-
-        <!-- DESCRIÇÃO -->
         <div>
           <h3>Descrição:</h3>
           <ul>
@@ -115,7 +102,7 @@
     </div>
   </section>
 
-  <!-- CONVITE (CTA) — ACIMA DO MAPA -->
+  <!-- CONVITE -->
   <section class="section">
     <div class="wrapper" style="text-align:center">
       <a class="cta-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf6hqe5GPnw8JKGI92llUf93ShaQ8_yL1FalzsEaCjiJVIFvA/viewform?usp=dialog" target="_blank" rel="noopener">
@@ -124,7 +111,7 @@
     </div>
   </section>
 
-  <!-- LOCALIZAÇÃO (MAPA) -->
+  <!-- LOCALIZAÇÃO -->
   <section class="section">
     <div class="wrapper">
       <h2>Localização</h2>
