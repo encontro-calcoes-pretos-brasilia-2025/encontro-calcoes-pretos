@@ -62,8 +62,8 @@ img{display:block;max-width:100%;height:auto}
 .left-alert{
   display:flex;
   flex-direction:column;
-  align-items:center;
-  justify-content:center;
+  align-items:left;
+  justify-content:left;
   gap:8px;
 }
 .alert-icon{
@@ -73,8 +73,8 @@ img{display:block;max-width:100%;height:auto}
 }
 .cta-btn{
   display:inline-flex;
-  justify-content:center;
-  align-items:center;
+  justify-content:left;
+  align-items:left;
   padding:14px 22px;
   width:140px;
   background:#fff;
@@ -107,9 +107,9 @@ img{display:block;max-width:100%;height:auto}
 .right-qr{
   display:flex;
   flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
+  align-items:right;
+  justify-content:right;
+  text-align:right;
   gap:6px;
 
   /* 🔹 novo: move levemente para a direita */
