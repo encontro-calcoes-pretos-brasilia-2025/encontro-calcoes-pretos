@@ -115,7 +115,7 @@ img{display:block;max-width:100%;height:auto}
   letter-spacing:1px;
   }
 .qr-code{
-  width:120px;            /* 🔽 QR menor */
+              /* 🔽 QR menor */
   height:auto;
 }
 
