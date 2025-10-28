@@ -103,7 +103,7 @@ img{display:block;max-width:100%;height:auto}
   filter:drop-shadow(0 20px 40px rgba(0,0,0,.6));
 }
 
-/* DIREITA: #VLCP + QR */
+/* BLOCO DIREITO: #VLCP + QR */
 .right-qr{
   display:flex;
   flex-direction:column;
@@ -111,6 +111,10 @@ img{display:block;max-width:100%;height:auto}
   justify-content:center;
   text-align:center;
   gap:6px;
+
+  /* 🔹 novo: move levemente para a direita */
+  position: relative;
+  left: 40px;  /* ajuste fino: pode aumentar ou diminuir */
 }
 .right-qr .hash{
   margin:0 0 4px;
@@ -119,7 +123,8 @@ img{display:block;max-width:100%;height:auto}
   letter-spacing:1px;
 }
 .right-qr img{
-  max-width:120px;
+  max-width:120px;  /* mantém tamanho original do QR */
+  height:auto;
 }
 
 /* SEÇÕES */
