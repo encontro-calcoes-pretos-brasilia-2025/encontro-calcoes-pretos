@@ -50,12 +50,12 @@ img{display:block;max-width:100%;height:auto}
   padding:40px 0;
   position:relative;
 }
-.hero-flex{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:40px;
-  flex-wrap:wrap;
+.hero-flex {
+  display: flex;
+  align-items: center;      /* alinha verticalmente no meio */
+  justify-content: center;  /* mantém tudo no centro geral */
+  gap: 60px;                /* distância entre os blocos */
+  flex-wrap: nowrap;        /* impede quebra de linha */
 }
 
 /* ALERTA + BOTÃO */
@@ -104,17 +104,17 @@ img{display:block;max-width:100%;height:auto}
 }
 
 /* BLOCO DIREITO: #VLCP + QR */
-.right-qr{
-  display:flex;
-  flex-direction:column;
-  align-items:right;
-  justify-content:right;
-  text-align:right;
-  gap:6px;
+.right-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
 
-  /* 🔹 novo: move levemente para a direita */
+  /* 🔹 garante que fique ao lado direito */
   position: relative;
-  left: 40px;  /* ajuste fino: pode aumentar ou diminuir */
+  right: 0;
 }
 .right-qr .hash{
   margin:0 0 4px;
@@ -122,11 +122,10 @@ img{display:block;max-width:100%;height:auto}
   font-weight:700;
   letter-spacing:1px;
 }
-.right-qr img{
-  max-width:60px;  /* mantém tamanho original do QR */
-  height:auto;
+.qr-code {
+  max-width: 120px;
+  height: auto;
 }
-
 /* SEÇÕES */
 .section{padding:32px 0;background:#000}
 .section h2{
