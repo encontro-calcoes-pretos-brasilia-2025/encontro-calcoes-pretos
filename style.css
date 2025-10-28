@@ -100,23 +100,29 @@ img{display:block;max-width:100%;height:auto}
 }
 
 /* DIREITA (hashtag + QR lado a lado e QR menor) */
+/* DIREITA (hashtag acima do QR code, QR maior) */
 .right-qr{
   display:flex;
-  align-items:right;
-  justify-content:flex-end;
-  gap:10px;
+  flex-direction:column;     /* 🔼 agora o hashtag fica em cima */
+  align-items:flex-end;      /* 🔽 alinha tudo à direita */
+  justify-content:center;
   text-align:right;
-  flex-wrap:nowrap;
+  gap:8px;
 }
+
 .hash{
   margin:0;
   color:var(--muted);
   font-weight:700;
   letter-spacing:1px;
-  }
+  font-size:1.1rem;          /* um pouco maior pro destaque */
+  white-space:nowrap;        /* evita quebra do texto */
+}
+
 .qr-code{
-              /* 🔽 QR menor */
+  width:140px;               /* 🔼 QR code aumentado */
   height:auto;
+  filter:drop-shadow(0 0 8px rgba(255,255,255,0.15)); /* leve brilho opcional */
 }
 
 /* (opcional) ajuste geral da seção HERO */
