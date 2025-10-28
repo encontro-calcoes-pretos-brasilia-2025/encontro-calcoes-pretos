@@ -58,7 +58,7 @@ img{display:block;max-width:100%;height:auto}
   flex-wrap:wrap;
 }
 
-/* BLOCO ESQUERDO (alerta + botão) */
+/* ALERTA + BOTÃO */
 .left-alert{
   display:flex;
   flex-direction:column;
@@ -67,23 +67,16 @@ img{display:block;max-width:100%;height:auto}
   gap:8px;
 }
 .alert-icon{
-  width:140px; /* mesmo tamanho visual do botão */
+  width:140px;
   height:auto;
   object-fit:contain;
-  animation:pulse-red 1.2s infinite;
-  filter:
-    drop-shadow(0 0 6px rgba(255,0,0,.8))
-    drop-shadow(0 0 15px rgba(255,0,0,.6))
-    drop-shadow(0 0 25px rgba(255,0,0,.4));
 }
-
-/* BOTÃO */
 .cta-btn{
   display:inline-flex;
   justify-content:center;
   align-items:center;
   padding:14px 22px;
-  width:140px; /* igual à sirene */
+  width:140px;
   background:#fff;
   color:#000;
   border-radius:999px;
@@ -97,43 +90,36 @@ img{display:block;max-width:100%;height:auto}
   transform:scale(1.05);
 }
 
-/* DISCOBÓLO CENTRAL - voltou ao tamanho original */
+/* DISCOBÓLO CENTRAL */
+.center-disc{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
 .discobolus{
   max-width:min(860px,92vw);
-  object-fit:contain;
+  width:100%;
+  height:auto;
   filter:drop-shadow(0 20px 40px rgba(0,0,0,.6));
 }
 
-/* QR E HASH */
-.hero .right{
+/* DIREITA: #VLCP + QR */
+.right-qr{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
   text-align:center;
+  gap:6px;
 }
-.hero .hash{
-  margin:8px 0 12px;
+.right-qr .hash{
+  margin:0 0 4px;
   color:var(--muted);
   font-weight:700;
   letter-spacing:1px;
 }
-.hero .right img{
+.right-qr img{
   max-width:120px;
-}
-
-/* ANIMAÇÃO DA SIRENE */
-@keyframes pulse-red{
-  0%,100%{
-    transform:scale(1);
-    filter:
-      drop-shadow(0 0 6px rgba(255,0,0,.8))
-      drop-shadow(0 0 15px rgba(255,0,0,.6))
-      drop-shadow(0 0 25px rgba(255,0,0,.4));
-  }
-  50%{
-    transform:scale(1.1);
-    filter:
-      drop-shadow(0 0 20px rgba(255,0,0,1))
-      drop-shadow(0 0 50px rgba(255,0,0,.85))
-      drop-shadow(0 0 80px rgba(255,0,0,.65));
-  }
 }
 
 /* SEÇÕES */
@@ -157,20 +143,15 @@ img{display:block;max-width:100%;height:auto}
 .sponsors .center{text-align:center}
 .sponsors .right{text-align:right}
 .sponsors img{max-height:64px}
-
-/* Almanaque — tamanho original restaurado */
 .sponsors img.almanaque{
+  max-height:none !important;
   width:auto;
-  max-height:none;
   height:auto;
   margin-inline:auto;
-  display:block;
 }
+.sponsors img.logo-fhe{max-height:44px;width:auto}
 
-/* Logo FHE */
-.sponsors img.logo-fhe{max-height:44px;width:auto;}
-
-/* CARTÃO DO KIT */
+/* KIT */
 .card-frame{
   border:3px solid var(--ink);
   border-radius:12px;
