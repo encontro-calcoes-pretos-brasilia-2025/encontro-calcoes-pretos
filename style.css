@@ -97,41 +97,63 @@ img{max-width:100%;height:auto;display:block}
   flex-wrap:wrap;
 }
 
-/* ESQUERDA: Sirene + botão (empilhados) */
-.alert-block{
-  position:relative;           /* para o reflexo ::after */
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
+/* ESQUERDA: Sirene + botão (empilhados e alinhados) */
+.alert-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-/* Sirene com brilho pulsante */
-.alert-icon{
-  height:32px;                 /* ↓ reduziu de 50px para 32px */
-  object-fit:contain;
-  animation:pulse-red 1.2s infinite;
+/* Sirene com mesmo tamanho do botão “Inscreva-se” */
+.alert-icon {
+  width: 140px;                /* mesma largura aproximada do botão */
+  height: auto;
+  object-fit: contain;
+  animation: pulse-red 1.2s infinite;
   filter:
-    drop-shadow(0 0 6px rgba(255,0,0,.8))
-    drop-shadow(0 0 15px rgba(255,0,0,.6))
-    drop-shadow(0 0 25px rgba(255,0,0,.4));
+    drop-shadow(0 0 6px rgba(255, 0, 0, 0.8))
+    drop-shadow(0 0 15px rgba(255, 0, 0, 0.6))
+    drop-shadow(0 0 25px rgba(255, 0, 0, 0.4));
 }
 
-/* Reflexo sutil da sirene no fundo */
-.alert-block::after{
-  content:"";
-  position:absolute;
-  left:50%;
-  top:10%;
-  width:180px;                 /* ↓ menor que antes */
-  height:180px;
-  transform:translateX(-50%);
-  pointer-events:none;
-  background:
-    radial-gradient(closest-side, rgba(255,0,0,.15), rgba(255,0,0,0) 70%);
-  filter:blur(8px);
-  opacity:.7;
+/* Reflexo vermelho suave ao redor da sirene */
+.alert-block::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  width: 200px;
+  height: 200px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  background: radial-gradient(
+    closest-side,
+    rgba(255, 0, 0, 0.15),
+    rgba(255, 0, 0, 0) 70%
+  );
+  filter: blur(10px);
+  opacity: 0.75;
+}
+
+/* Animação de brilho pulsante */
+@keyframes pulse-red {
+  0%, 100% {
+    transform: scale(1);
+    filter:
+      drop-shadow(0 0 6px rgba(255, 0, 0, 0.8))
+      drop-shadow(0 0 20px rgba(255, 0, 0, 0.6))
+      drop-shadow(0 0 40px rgba(255, 0, 0, 0.4));
+  }
+  50% {
+    transform: scale(1.1);
+    filter:
+      drop-shadow(0 0 20px rgba(255, 0, 0, 1))
+      drop-shadow(0 0 50px rgba(255, 0, 0, 0.85))
+      drop-shadow(0 0 80px rgba(255, 0, 0, 0.65));
+  }
 }
 
 /* CENTRO: Discóbolo */
