@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-  <!-- HEADER -->
+  <!-- HEADER (fundo branco, título grande) -->
   <header class="header">
     <div class="wrapper bar">
       <div class="shields"><img src="./assets/cmp (1).png" alt="Brasão esquerdo"/></div>
@@ -17,33 +17,32 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO (preto, Discóbolo central e QR menor) -->
   <section class="hero">
-    <div class="wrapper">
-      <div class="hero-flex">
-        <!-- ESQUERDA -->
-        <div class="left-alert">
-          <img src="./assets/alerta.jpg" alt="Alerta" class="alert-icon"/>
-          <a class="cta-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf6hqe5GPnw8JKGI92llUf93ShaQ8_yL1FalzsEaCjiJVIFvA/viewform?usp=dialog" target="_blank" rel="noopener">
-            INSCREVA-SE
-          </a>
-        </div>
+  <div class="wrapper">
+    <div class="grid hero-row">
+      <!-- ALERTA à ESQUERDA -->
+      <div class="left-alert">
+        <img src="./assets/alerta.jpg" alt="Alerta"/>
+        <a class="cta-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf6hqe5GPnw8JKGI92llUf93ShaQ8_yL1FalzsEaCjiJVIFvA/viewform?usp=dialog" target="_blank" rel="noopener">
+          Inscreva-se
+        </a>
+      </div>
 
-        <!-- CENTRO -->
-        <div class="center-disc">
-          <img class="discobolus" src="./assets/discobolo-novo.jpg" alt="Discóbolo"/>
-        </div>
+      <!-- DISCOBÓLO AO CENTRO (sem inline style!) -->
+      <div>
+        <img class="discobolus" src="./assets/discobolo-novo.jpg" alt="Discóbolo"/>
+      </div>
 
-        <!-- DIREITA -->
-        <div class="right-qr">
-          <div class="hash">#VLCP</div>
-          <img src="./assets/Sem título.png" alt="QR Code" class="qr-code"/>
-        </div>
+      <!-- QR e HASH à DIREITA -->
+      <div class="right">
+        <div class="hash">#VLCP</div>
+        <img src="./assets/Sem título.png" alt="QR Code"/>
       </div>
     </div>
-  </section>
-
-  <!-- RESTANTE DO SITE -->
+  </div>
+</section>
+  <!-- PROGRAMAÇÃO -->
   <section class="section">
     <div class="wrapper">
       <h2>Programação</h2>
@@ -61,18 +60,74 @@
     </div>
   </section>
 
+  <!-- PATROCINADORES / ALMANAQUE -->
   <section class="sponsors">
     <div class="wrapper row">
       <div class="center">
         <img src="./assets/transferir (1) (1).png" alt="Ornamento dourado"/>
       </div>
       <div class="center">
-        <a href="https://drive.google.com/file/d/1TLmz0ta9QCRXG6n57uOZ8r_TmzqWHxb4/view?usp=drive_link" target="_blank" rel="noopener">
-          <img class="almanaque" src="./assets/large (1).jpg" alt="Almanaque (clique para abrir o PDF)">
-        </a>
+        <!-- ALMANAQUE VIRA LINK PARA O PDF -->
+        <div class="center">
+          <a href="https://drive.google.com/file/d/1TLmz0ta9QCRXG6n57uOZ8r_TmzqWHxb4/view?usp=drive_link" target="_blank" rel="noopener">
+            <img class="almanaque" src="./assets/large (1).jpg" alt="Almanaque (clique para abrir o PDF)">
+          </a>
+        </div>
       </div>
       <div class="right">
         <img class="logo-fhe" src="./assets/fhe (1).png" alt="FHE"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- KIT CALÇÃO PRETO -->
+<section class="section">
+  <div class="wrapper">
+    <h2>KIT CALÇÃO PRETO</h2>
+    <div style="display:grid;grid-template-columns:1fr;gap:20px">
+      <!-- GRID DAS IMAGENS -->
+      <div class="card-frame" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      ">
+        <img src="./assets/camisadefinitiva-fotor-bg-remover-20251001171611.png" alt="Camiseta do Kit" style="height:220px;object-fit:contain"/>
+        <img src="./assets/1copo.jpg" alt="Copo 1" style="height:160px;object-fit:contain"/>
+        <img src="./assets/copo.jpg" alt="Copo 2" style="height:160px;object-fit:contain"/>
+        <img src="./assets/moeda.png" alt="moeda" style="height:160px;object-fit:contain"/>
+      </div>
+
+      <!-- DESCRIÇÃO -->
+      <div>
+        <h3>Descrição:</h3>
+        <ul>
+          <li>Camiseta Calção Preto</li>
+          <li>Bolsa Velame</li>
+          <li>Moeda Comemorativa</li>
+          <li>Caneca</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- CONVITE (CTA) — ACIMA DO MAPA -->
+  <section class="section">
+    <div class="wrapper" style="text-align:center">
+      <a class="cta-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf6hqe5GPnw8JKGI92llUf93ShaQ8_yL1FalzsEaCjiJVIFvA/viewform?usp=dialog" target="_blank" rel="noopener">
+        Ingresso
+      </a>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO (MAPA) -->
+  <section class="section">
+    <div class="wrapper">
+      <h2>Localização</h2>
+      <div style="width:100%;height:360px;border:0;overflow:hidden">
+        <iframe src="https://www.google.com/maps?q=16+Batalhao+Logistico,+Avenida+Duque+de+Caxias+S%2FN,+Setor+Militar+Urbano,+Brasilia,+DF+70630-000&output=embed" width="100%" height="360" style="border:0"></iframe>
       </div>
     </div>
   </section>
