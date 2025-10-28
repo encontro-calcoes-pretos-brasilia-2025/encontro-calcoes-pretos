@@ -113,8 +113,7 @@ img{display:block;max-width:100%;height:auto}
   color:var(--muted);
   font-weight:700;
   letter-spacing:1px;
-  white-space:nowrap;    /* 🔒 evita quebrar o #VLCP */
-}
+  }
 .qr-code{
   width:120px;            /* 🔽 QR menor */
   height:auto;
