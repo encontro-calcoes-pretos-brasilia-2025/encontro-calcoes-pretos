@@ -62,8 +62,8 @@ img{display:block;max-width:100%;height:auto}
 .left-alert{
   display:flex;
   flex-direction:column;
-  align-items:center;
-  justify-content:center;
+  align-items:left;
+  justify-content:left;
   gap:12px;
 }
 .alert-icon{
@@ -75,8 +75,8 @@ img{display:block;max-width:100%;height:auto}
 /* BOTÃO (garante não quebrar) */
 .cta-btn{
   display:inline-flex;
-  justify-content:center;
-  align-items:center;
+  justify-content:left;
+  align-items:left;
   padding:14px 22px;
   width:140px;
   background:#fff;
@@ -102,7 +102,7 @@ img{display:block;max-width:100%;height:auto}
 /* DIREITA (hashtag + QR lado a lado e QR menor) */
 .right-qr{
   display:flex;
-  align-items:center;
+  align-items:right;
   justify-content:flex-end;
   gap:10px;
   text-align:right;
