@@ -65,10 +65,9 @@ img{display:block;max-width:100%;height:auto}
   align-items:center;
   justify-content:center;
   gap:8px;
-  position:relative;
 }
 .alert-icon{
-  width:140px;  /* mesmo tamanho do botão */
+  width:140px; /* mesmo tamanho visual do botão */
   height:auto;
   object-fit:contain;
   animation:pulse-red 1.2s infinite;
@@ -84,7 +83,7 @@ img{display:block;max-width:100%;height:auto}
   justify-content:center;
   align-items:center;
   padding:14px 22px;
-  width:140px;   /* mesma largura da sirene */
+  width:140px; /* igual à sirene */
   background:#fff;
   color:#000;
   border-radius:999px;
@@ -98,9 +97,9 @@ img{display:block;max-width:100%;height:auto}
   transform:scale(1.05);
 }
 
-/* DISCOBÓLO CENTRAL */
+/* DISCOBÓLO CENTRAL - voltou ao tamanho original */
 .discobolus{
-  height:260px;
+  max-width:min(860px,92vw);
   object-fit:contain;
   filter:drop-shadow(0 20px 40px rgba(0,0,0,.6));
 }
@@ -137,7 +136,7 @@ img{display:block;max-width:100%;height:auto}
   }
 }
 
-/* OUTRAS SEÇÕES */
+/* SEÇÕES */
 .section{padding:32px 0;background:#000}
 .section h2{
   font-family:Oswald,sans-serif;
@@ -159,9 +158,10 @@ img{display:block;max-width:100%;height:auto}
 .sponsors .right{text-align:right}
 .sponsors img{max-height:64px}
 
-/* Almanaque: tamanho original */
+/* Almanaque — tamanho original restaurado */
 .sponsors img.almanaque{
   width:auto;
+  max-height:none;
   height:auto;
   margin-inline:auto;
   display:block;
