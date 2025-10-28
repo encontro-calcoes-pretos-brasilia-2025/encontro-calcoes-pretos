@@ -123,7 +123,7 @@ img{display:block;max-width:100%;height:auto}
   letter-spacing:1px;
 }
 .right-qr img{
-  max-width:120px;  /* mantém tamanho original do QR */
+  max-width:60px;  /* mantém tamanho original do QR */
   height:auto;
 }
 
