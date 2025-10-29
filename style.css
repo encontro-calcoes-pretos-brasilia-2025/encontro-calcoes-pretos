@@ -62,8 +62,8 @@ img{display:block;max-width:100%;height:auto}
 .left-alert{
   display:flex;
   flex-direction:column;
-  align-items:left;
-  justify-content:left;
+  align-items:center;
+  justify-content:center;
   gap:12px;
 }
 .alert-icon{
