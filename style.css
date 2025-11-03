@@ -79,7 +79,7 @@ img{display:block;max-width:100%;height:auto}
   justify-content:left;       /* ✅ centraliza horizontal */
   align-items:left;            /* ✅ centraliza vertical */
   text-align:center;             /* ✅ garante alinhamento do texto */
-  padding:14px 22px;
+  padding:14px 20px;
   width:140px;
   background:#fff;
   color:#000;
