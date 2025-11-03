@@ -74,22 +74,7 @@ img{display:block;max-width:100%;height:auto}
 
 /* BOTÃO (garante não quebrar) */
 /* BOTÃO (centralizado no “círculo” branco) */
-.cta-btn{
-  display:flex;                 /* já estava inline-flex, mas flex simplifica */
-  justify-content:left;       /* ✅ centraliza horizontal */
-  align-items:left;            /* ✅ centraliza vertical */
-  text-align:center;             /* ✅ garante alinhamento do texto */
-  padding:14px 22px;
-  width:140px;
-  background:#fff;
-  color:#000;
-  border-radius:999px;           /* mantém o formato arredondado */
-  font-weight:800;
-  border:2px solid #fff;
-  text-transform:uppercase;
-  white-space:nowrap;            /* mantém “Inscreva-se” numa linha */
-  transition:.2s;
-}
+
 
 /* CENTRO */
 .center-disc{
