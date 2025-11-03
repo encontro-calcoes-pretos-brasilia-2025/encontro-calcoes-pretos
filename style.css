@@ -78,7 +78,7 @@ img{display:block;max-width:100%;height:auto}
   display:flex;                 /* já estava inline-flex, mas flex simplifica */
   justify-content:left;       /* ✅ centraliza horizontal */
   align-items:left;            /* ✅ centraliza vertical */
-  text-align:center;             /* ✅ garante alinhamento do texto */
+  text-align:left;             /* ✅ garante alinhamento do texto */
   padding:14px 20px;
   width:140px;
   background:#fff;
